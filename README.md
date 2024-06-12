@@ -7,7 +7,7 @@ Utilize K-Nearest Neighbor model to produce book recommendations based on an inp
 Link: https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset?select=Ratings.csv
 
 ### Cleaning of Dataset
-[Books.csv](Resources/Books.csv) was 'left' merged with [Ratings.csv](Resources/Ratings.csv) and all ratings of 0 were filled with NaN.  Book-Author and Book-Title column were cleaned by consolidating name variations (notebook: [book_recommender.ipynb](book_recommender.ipynb)).  
+[Books.csv](Resources/Books.csv) was 'left' merged with [Ratings.csv](Resources/Ratings.csv) and all ratings of 0 were filled with NaN.  Book-Author and Book-Title column were cleaned by consolidating name variations using regex (notebook: [book_recommender.ipynb](book_recommender.ipynb)).  
 ### Filtering of Dataset
 The User-IDs with less than 15 books purchased, and books with less than 50 purchases were removed from the dataset.  These cutoff points were utilized to achieve a target sparsity of <99.5%.  
 
